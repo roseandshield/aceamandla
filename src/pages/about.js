@@ -1,65 +1,105 @@
 import React from "react"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import informationImage from "../../static/images/Information-document.svg";
-import eventImage from "../../static/images/Event-managment.svg";
-import ProductivityImage from "../../static/images/Increase-Productivity.svg";
-import happinessImage from "../../static/images/Make-happiness.svg";
+
+import PageHeader from "../components/pageheader"
+
+import informationImage from "../../static/images/Information-document.svg"
+import eventImage from "../../static/images/Event-managment.svg"
+import ProductivityImage from "../../static/images/Increase-Productivity.svg"
+import happinessImage from "../../static/images/Make-happiness.svg"
 
 const AboutPage = () => (
-    <Layout>
-        <SEO title="About"/>
+  <Layout>
+    <SEO title="About" />
+    <PageHeader
+      image={require("../../static/images/ace_pic3.jpg")}
+      maintext="About Ace Amandla"
+      subtext="Chicago's premier charter high school in STEM"
+    />
 
-        <div className={"page-header"}>
-            <h2>What’s HiStaff?</h2>
-            <p>HiStaff is a service that boost the staff’s productivity by offering new ways<br />to increase employee motivation and happiness.</p>
+    <div className={"container"}>
+      <div className={"targets"}>
+        <div className={"title"}>
+          <h2>About Ace Amandla</h2>
+          <SubText>
+            ACE Technical Charter High School was founded in 2004 by Chicagoland
+            Architecture, Construction and Engineering industry leaders
+            committed increasing the number of urban, low income, minority and
+            female youth who pursue education and careers in the architecture,
+            construction and engineering professions. <br /> <br />
+            Since its inception, students have gained professional exposure
+            through partnerships with a number of organizations including ACE
+            Mentors. ACE Tech graduates have successfully applied and been
+            accepted into apprenticeships in the International Brotherhood of
+            Electrical Workers (IBEW), Carpenter’s and the Plumber’s
+            Apprenticeship programs as well other labor unions. Students are
+            working in architectural, construction as well as other firms
+            throughout the city including: the University of Chicago, FH Paschen
+            and the Ford Motor Company. Some have become construction business
+            owners in the City of Chicago. Amandla Charter School was founded in
+            2008 to prepare Chicago’s students for college and beyond. Amandla
+            in the Nguni languages means "power" and was used as a rallying cry
+            during the resistance against apartheid in South Africa. <br />{" "}
+            <br />
+            Amandla Charter School’s founders chose it as the school’s name so
+            as to have a constant reminder of the power and importance of a good
+            education. Amandla began with 5th graders and graduated its first
+            high school class in 2016, sending more than 90% of those graduates
+            to college. In July 2019, ACE Technical Charter High School and
+            Amandla Charter School merged to form ACE Amandla Charter High
+            School. ACE Amandla Charter High School stands apart from other high
+            schools in Chicago in its vision, focus and mission. At ACE Amandla,
+            students are exposed to hands-on, project-based learning in the
+            classroom, as well as given opportunities for work experience
+            through internship opportunities. Whether a student is plotting a
+            course directly into an apprenticeable trade or planning on
+            attending a four-year college, ACE Amandla will prepare them with a
+            strong foundation.
+          </SubText>
         </div>
 
-        <div className={"container"}>
-            <div className={"targets"}>
-                <div className={"title"}>
-                    <h2>Our Targets</h2>
-                </div>
-
-                <div className={"row"}>
-                    <div className={"col-6"}>
-                        <div className={"item"}>
-                            <img alt={"Information"} src={informationImage}/>
-                            <h3>Handling of Employes’s Information and documents</h3>
-                            <p>Having a human management software for businesses and startups is not always cost-effective. HiStaff allows companies to archive their employees' documents and information free of charge.</p>
-                        </div>
-                    </div>
-
-                    <div className={"col-6"}>
-                        <div className={"item"}>
-                            <img alt={"Event"} src={eventImage}/>
-                            <h3>Manage Events</h3>
-                            <p>How to hold internal events is one of the problems of companies. HiStaff by presenting new ideas allows event management to be done as easily as possible.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={"row"}>
-                    <div className={"col-6"}>
-                        <div className={"item"}>
-                            <img alt={"Productivity"} src={ProductivityImage}/>
-                            <h3>Raise productivity</h3>
-                            <p>Many factors are affecting the staff's productivity in the workplace, the relationship between manager and staff and environmental factors are the main factors, therefore we will focus on these two factors in achieving our goal. Ultimately, increasing employee's productivity results in increasing the quality of products and services that are going to be provided.</p>
-                        </div>
-                    </div>
-
-                    <div className={"col-6"}>
-                        <div className={"item"}>
-                            <img alt={"Happiness"} src={happinessImage}/>
-                            <h3>Boost motivation and happiness</h3>
-                            <p>It is Obvious that a happy employee will make the environment happy and energetic! We are constantly attempting to provide solutions for maximizing employee’s motivation and joy.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div className={"title"}>
+          <h2>Vision Statement</h2>
+          <SubText>
+            ACE Amandla Charter High School strives to be an inclusive community
+            that prepares students for rewarding careers in architecture,
+            construction, and engineering.
+          </SubText>
         </div>
-    </Layout>
+
+        <div className={"title"}>
+          <h2>Mission Statement</h2>
+          <SubText>
+            ACE Amandla Charter High School seeks to prepare students
+            academically and socially with the skills needed for post-secondary
+            success by providing high quality instruction, real world
+            experiences, and comprehensive support in a professional
+            environment.
+          </SubText>
+        </div>
+
+        <div className={"title"}>
+          <h2>Long Term Instructional Goals</h2>
+          <SubText>
+            Students at ACE Amandla are collaborative and critical problem
+            solvers who actively participate in relevant project-based learning.
+            We encourage students to be curious and reflective learners who are
+            self-advocates and communicators.
+          </SubText>
+        </div>
+      </div>
+    </div>
+  </Layout>
 )
 
 export default AboutPage
+
+const SubText = styled.p`
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  color: #121212;
+`
