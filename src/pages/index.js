@@ -10,13 +10,14 @@ import upcomingEvents from "../../static/images/ace_pic2.jpg"
 import featureOne from "../../static/images/ace_pic3.jpg"
 import featureTwo from "../../static/images/ace_pic2.jpg"
 import featureThree from "../../static/images/ace_pic1.jpg"
+import featureOneA from "../../public/images/ace_pic6.jpg"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Ace Amandla Charter High School" />
     <Hero
       image={require("../../static/images/ace_pic1.jpg")}
-      tag="Coming Soon"
+      tag="New"
       maintext="STEM Education Redefined"
       subtext="Chicago's premier charter high school in STEM"
       buttontext="Enroll Today"
@@ -50,10 +51,7 @@ const IndexPage = () => (
             <div className={"col-6"}>
               <div className={"feature__content"}>
                 <h2>Upcoming Events</h2>
-                <p>
-                  This section will showcase new and upcoming events as well as
-                  important announcemnets at Ace Amandla Charter School
-                </p>
+                <p>Coming Soon</p>
               </div>
             </div>
           </div>
@@ -64,11 +62,7 @@ const IndexPage = () => (
             <div className={"col-6"}>
               <div className={"feature__content"}>
                 <h2>Gallery Section</h2>
-                <p>
-                  In this section, we'll configure a gallery of photos...
-                  <br />
-                  ...possibly driven by Instagram?
-                </p>
+                <p>Instagram integration coming soon!</p>
               </div>
             </div>
 
@@ -84,7 +78,7 @@ const IndexPage = () => (
           <div className={"row"}>
             <div className={"col-6 first"}>
               <div className={"thumbnail"}>
-                <Image alt={"News"} src={upcomingEvents} />
+                <Image alt={"Feature"} src={featureOneA} />
               </div>
             </div>
 
@@ -161,7 +155,14 @@ export default IndexPage
 
 const Image = styled.img`
   border-radius: 20px;
-  box-shadow: 5%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  }
 `
 const SubText = styled.p`
   font-size: 16px;

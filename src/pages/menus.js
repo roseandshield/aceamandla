@@ -34,6 +34,7 @@ const Menus = () => (
                 src="https://drive.google.com/file/d/0BydpsQIFTSd0cjBmTm5IdUd2RVN1elgwaDRKbjVaNTJUaXU4/preview"
                 width="640"
                 height="480"
+                title="Breakfast Menus"
               />
             </div>
           </div>
@@ -52,6 +53,7 @@ const Menus = () => (
                 src="https://drive.google.com/file/d/0BydpsQIFTSd0aXppTUVYQkFUUDZYM1V4Z1U5ekhVUExLdzJN/preview"
                 width="640"
                 height="480"
+                title="Lunch Menus"
               />
             </div>
           </div>
