@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { StaticQuery, graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 
 import logo from "../../static/images/logo1.png"
 // import iconFacebook from "../../static/images/icon-facebook.svg"

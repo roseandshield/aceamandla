@@ -8,7 +8,6 @@ import PageHeader from "../components/pageheader"
 import informationImage from "../../static/images/Information-document.svg"
 import eventImage from "../../static/images/Event-managment.svg"
 import ProductivityImage from "../../static/images/Increase-Productivity.svg"
-import happinessImage from "../../static/images/Make-happiness.svg"
 
 const AboutPage = () => (
   <Layout>
@@ -89,6 +88,7 @@ const AboutPage = () => (
                 height="450"
                 frameborder="0"
                 allowfullscreen=""
+                title="Ace Amandla Location"
               />
             </div>
           </div>

@@ -61,7 +61,7 @@ const IndexPage = () => (
           <div className={"row"}>
             <div className={"col-6"}>
               <div className={"feature__content"}>
-                <h2>Gallery Section</h2>
+                <h2>Gallery</h2>
                 <p>Instagram integration coming soon!</p>
               </div>
             </div>
