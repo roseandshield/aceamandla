@@ -5,12 +5,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import Hero from "../components/hero"
+// import InfiniteHorizontal from "../components/infinitehorizontal"
 import featureImage from "../../static/images/ace_pic1.jpg"
 import upcomingEvents from "../../static/images/ace_pic2.jpg"
 import featureOne from "../../static/images/ace_pic3.jpg"
-import featureTwo from "../../static/images/ace_pic2.jpg"
-import featureThree from "../../static/images/ace_pic1.jpg"
-import featureOneA from "../../public/images/ace_pic6.jpg"
 
 const IndexPage = () => (
   <Layout>
@@ -18,8 +16,8 @@ const IndexPage = () => (
     <Hero
       image={require("../../static/images/ace_pic1.jpg")}
       tag="New"
-      maintext="STEM Education Redefined"
-      subtext="Chicago's premier charter high school in STEM"
+      maintext="S.T.E.M. Education Redefined"
+      subtext="Chicago's premier charter high school in S.T.E.M."
       buttontext="Enroll Today"
     />
     <div className={"container"}>
@@ -37,6 +35,19 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+
+    <div className={"container"}>
+      <div className={"targets"}>
+        <div className={"title"}>
+          <h2>Upcoming Events</h2>
+          <SubText>
+            Follow the Ace Amandla 2019 - 2020 academic school year events!
+          </SubText>
+        </div>
+      </div>
+    </div>
+
+    {/* <InfiniteHorizontal colormain="black" color="white" /> */}
 
     <div className={"container"}>
       <div className={"features"}>
@@ -78,7 +89,7 @@ const IndexPage = () => (
           <div className={"row"}>
             <div className={"col-6 first"}>
               <div className={"thumbnail"}>
-                <Image alt={"Feature"} src={featureOneA} />
+                <Image alt={"Feature"} src={featureImage} />
               </div>
             </div>
 

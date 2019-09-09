@@ -46,10 +46,14 @@ const SectionGroup = styled.div`
   padding: 70px 50px 40px;
   text-align: center;
 
-  @media (max-width: 720px) {
-    padding: 40px 80px 40px;
-    margin: auto;
-    grid-template-columns: auto 300px auto;
+  @media (max-width: 820px) {
+    grid-template-columns: auto 500px auto;
+    padding: 60px 20px 20px 20px;
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: auto 280px auto;
+    padding: 2px 30px 20px 30px;
   }
 `
 
@@ -69,8 +73,12 @@ const MainText = styled.text`
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 
-  @media (max-width: 720px) {
+  @media (max-width: 820px) {
     font-size: 30px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 25px;
   }
 
   @keyframes HeroAnimation {

@@ -23,6 +23,7 @@ export default Hero
 /* CSS Styles below */
 const HeroContainer = styled.div`
   max-width: 1500px;
+  width: 100%;
   height: 720px;
   background:   
     /* top, gradient */ linear-gradient(
@@ -38,6 +39,11 @@ const HeroContainer = styled.div`
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
 
+  @media (max-width: 820px) {
+    padding: 90px 10px;
+    height: 500px;
+  }
+
   @media (max-width: 640px) {
     padding: 90px 10px;
     height: 400px;
@@ -46,16 +52,27 @@ const HeroContainer = styled.div`
 /* Change the "500px" column in grid-template-column to match the column of the content placement */
 const HeroGroup = styled.div`
   display: grid;
-  grid-template-areas: "leftcontent1 middlecontent1 rightcontent1" "leftcontent2 middlecontent2 rightcontent2" "leftcontent3 middlecontent3 rightcontent3" "leftcontent4 middlecontent4 rightcontent4";
   grid-template-columns: auto 500px auto;
   grid-template-rows: repeat(4, minmax(0px, auto));
-  margin: 30px auto;
-  max-width: 1000px;
-  padding: 150px 50px;
+  align-items: center;
+  justify-items: center;
+
+  grid-template-areas: "leftcontent1 middlecontent1 rightcontent1" "leftcontent2 middlecontent2 rightcontent2" "leftcontent3 middlecontent3 rightcontent3" "leftcontent4 middlecontent4 rightcontent4";
+
   text-align: left;
 
+  max-width: 800px;
+  padding: 150px 50px;
+
+  @media (max-width: 820px) {
+    grid-template-columns: 50px 400px 50px;
+    padding: 80px 60px;
+    margin-right: 20px;
+  }
+
   @media (max-width: 640px) {
-    padding: 100px 80px;
+    grid-template-columns: 5px 280px 20px;
+    padding: 130px 50px;
   }
 `
 
@@ -95,8 +112,12 @@ const HeroMainText = styled.text`
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 
-  @media (max-width: 640px) {
+  @media (max-width: 820px) {
     font-size: 40px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 25px;
   }
 
   @keyframes HeroAnimation {

@@ -14,8 +14,8 @@ const AboutPage = () => (
     <SEO title="About" />
     <PageHeader
       image={require("../../static/images/ace_pic3.jpg")}
-      maintext="About Ace Amandla"
-      subtext="Chicago's premier charter high school in STEM"
+      maintext="Contact Us"
+      subtext="Ace Amandla Charter High School"
     />
     <div className={"container"}>
       <div className={"targets"}>
